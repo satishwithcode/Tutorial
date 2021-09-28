@@ -1,0 +1,11 @@
+body{
+  background-color: chartreuse;
+}
+h2{color: coral;}
+p{color: gray;
+  border: 2px solid red;
+  font-size:21;
+  padding: 30px;
+  margin: 30px;
+}
+img{border-radius: 10px;}

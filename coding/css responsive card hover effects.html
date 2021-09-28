@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container{
+        position: relative;
+        width: 1100px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-wrap: wrap;
+        padding: 30px;
+      }
+      .container .card{
+        position: relative;
+        max-width: 300px;
+        height: 200x;
+        background: chartreuse;
+        margin: 53px 1px;
+        padding: 20px 5px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 202px red;
+        transition: 0.3s ease-in-out;
+      }
+      .container .card:hover{
+        height: 400px;
+      }
+      .container .card .imgbx{
+        position: relative;
+        width: 260px;
+        height: 260px;
+        top: -80px;
+        left: 20px;
+        z-index: 1;
+        box-shadow: 0 5px 20px grey;
+      }
+      .container .card .imgbx img{
+        max-width: 100%;
+        border-radius: 5px;
+      }
+      .container .card .content{
+        position: relative;
+        margin-top: -280px;
+        padding: 12px 16px;
+        text-align: center;
+        color: green;
+        visibility: hidden;
+        appearance: none;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+      }
+      .container .card:hover .content{
+        visibility: visible;
+        opacity: 1;
+        margin-top: -100px;
+        transition-delay: 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="imgbx">
+          <img src="annu1.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2>Card One</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti necessitatibus explicabo odit quisquam ducimus rerum, excepturi magni impedit itaque accusamus est ipsa delectus sapiente harum animi, fugit alias! Nostrum, earum.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgbx">
+          <img src="annu3.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2>Card Two</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti necessitatibus explicabo odit quisquam ducimus rerum, excepturi magni impedit itaque accusamus est ipsa delectus sapiente harum animi, fugit alias! Nostrum, earum.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgbx">
+          <img src="annu1.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2>Card Three</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti necessitatibus explicabo odit quisquam ducimus rerum, excepturi magni impedit itaque accusamus est ipsa delectus sapiente harum animi, fugit alias! Nostrum, earum.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

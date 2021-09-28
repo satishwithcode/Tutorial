@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="utf-8">
+  <title>Personal Portfolio Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awesome -->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+  <style>
+/*-------
+fonts
+-------*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+/*-------
+global style
+----------*/
+/* define custom css varibles */
+:root{
+  --skin-color:#fb839e;
+  --bg-black-900: #000000;
+  --bg-black-100: #dddddd;
+  --bg-black-50:  #eff0f4;
+  --text-black-900: #000000;
+  --text-black-700: #555555;
+  --text-black-600: #666666;
+  --text-black-300: #bbbbbb;
+  --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+  --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
+  --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+}
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  background-color: var(--bg-black-50);
+}
+*:not(i){
+  font-family: 'Raleway',sans-serif;
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+/*-------
+navigation
+---------*/
+
+.nav-menu{
+  position: fixed;
+  background-color: var(--bg-black-50);
+  padding: 0 15px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  overflow-y: auto;
+
+}
+.nav-menu .close-nav-menu{
+  height: 40px;
+  width: 40px;
+  display: block;
+  font-size: 45px;
+  line-height: 35px;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  text-align: center;
+  color: var(--text-black-600);
+  transition: all 0.3s ease;
+  box-shadow:  3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;;
+}
+.nav-menu .close-nav-menu:hover{
+  box-shadow:inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+  color: var(--skin-color);
+
+}
+.nav-menu .close-nav-menu:after{
+  border-radius: 50%;
+}
+.nav-menu-inner{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-menu ul{
+  padding: 15px;
+}
+.nav-menu ul li{
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.nav-menu ul li:last-child{
+  margin-bottom: 0;
+}
+.nav-menu ul li a{
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-black-700);
+  padding: 5px 30px;
+  text-transform: capitalize;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow:  3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+  text-decoration: none;
+}
+.nav-menu ul li a:hover{
+  box-shadow:  inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+}
+.nav-menu ul li a.active{
+  color: var(--skin-color);
+  box-shadow:  inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+}
+.nav-menu ul li a:after{
+  border-radius: 30px;
+}
+.nav-menu .copyright-text{
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  font-size: 15px;
+  color: var(--text-black-600);
+  transform: translateY(-150%) rotate(-90deg);
+
+}
+</style>
+</head>
+<body>
+  
+    <!--navigeation manu start -->
+    <nav class="nav-menu">
+      <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
+      <div class="nav-menu-inner">
+        <ul>
+          <li><a href="#" class="inner-shadow active">home</a></li>
+          <li><a href="#" class="outer-shadow hover-in-shadow">about</a></li>
+          <li><a href="#" class="outer-shadow hover-in-shadow">services</a></li>
+          <li><a href="#" class="outer-shadow hover-in-shadow">portfolio</a></li>
+          <li><a href="#" class="outer-shadow hover-in-shadow">testimonial</a></li>
+          <li><a href="#" class="outer-shadow hover-in-shadow">content</a></li>
+        </ul>
+      </div>
+      <!-- copyright text -->
+      <p class="copyright-text">&copy; 2021 Satish Yadav</p>
+    </nav>
+    <!--navigeation manu end -->
+  
+</body>
+</html>
